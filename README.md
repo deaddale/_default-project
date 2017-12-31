@@ -42,14 +42,6 @@ grunt
 // URL to view the home
 http://localhost:7700/dist/
 ```
-```
-// Three commands in a single shell file. Run
-./setup-project.sh
-```
-```
-// Remove all temporary files
-./remove-temp-files.sh
-```
 
 ## Project structure ##
 
@@ -102,8 +94,17 @@ Grunt сonfig
 
 - **remove-temp-files.sh**
 
-macOS. Удаление всех временных файлов проекта
+macOS. Deleting all temporary project files
 
 - **setup-project.sh**
 
-macOS. Установка NPM, создание символической ссылки на каталог dist, запуск Grunt
+macOS. Installing NPM, you create a link to the "dist" directory, run Grunt
+
+```
+// Deleting
+./remove-temp-files.sh
+```
+```
+// Setup&Start
+./setup-project.sh
+```
