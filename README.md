@@ -43,7 +43,7 @@ grunt
 http://localhost:7700/dist/
 ```
 ```
-// In order to run these three commands automatically run in the console:
+// Three commands in a single shell file. Run
 ./setup-project.sh
 ```
 
@@ -102,4 +102,4 @@ A list with the imported SASS files
 
 - **public/Gruntfile.js**
 
-Grunt Config
+Grunt сonfig
