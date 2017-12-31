@@ -46,6 +46,10 @@ http://localhost:7700/dist/
 // Three commands in a single shell file. Run
 ./setup-project.sh
 ```
+```
+// Remove all temporary files 
+./remove-temp-files.sh
+```
 
 ## Project structure ##
 
