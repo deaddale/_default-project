@@ -47,7 +47,7 @@ http://localhost:7700/dist/
 ./setup-project.sh
 ```
 ```
-// Remove all temporary files 
+// Remove all temporary files
 ./remove-temp-files.sh
 ```
 
@@ -56,6 +56,7 @@ http://localhost:7700/dist/
 - **grunt/**
 
 Configs task to build the project. at the moment, the project Assembly is configured only on the development.
+
 - **public/**
 
 All project source files, and a dist directory where the compiled files of the project.
@@ -63,12 +64,7 @@ All project source files, and a dist directory where the compiled files of the p
 - **public/block/**
 
 Blocks. Writing markup and styles are strictly for **[BEM methodology](https://ru.bem.info/methodology/quick-start/)**.
-One unit - one slide. **Common/** contain the General styles. Carefully review the data files and stick to their logic.
-Please note that the icons in base64, animations separately, the variables for fonts and colors separately. You do not need to produce a lot of support mixins and classes.
-Before writing 20 mixins with a margin think will understand you, your colleague and how much time it will take to
-understanding of the project.
-
-All styles of writing strictly in SASS (not SCSS, all the CSS/SCSS files in SASS convert). It takes 1 minute of time. It is enough to replace the file, curly braces and semicolons.
+One unit - one slide. **Common/** contain the General styles. Etc...
 
 - **public/dist/**
 
@@ -92,10 +88,6 @@ Third-party libraries (JS and SASS).
 
 Template markup
 
-- **public/video/**
-
-Video used in the project.
-
 - **public/app-project.js**
 
 The main JS file
@@ -107,3 +99,11 @@ A list with the imported SASS files
 - **public/Gruntfile.js**
 
 Grunt сonfig
+
+- **remove-temp-files.sh**
+
+macOS. Удаление всех временных файлов проекта
+
+- **setup-project.sh**
+
+macOS. Удаление всех временных файлов проекта
