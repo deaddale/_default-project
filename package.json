@@ -17,8 +17,5 @@
         "load-grunt-config": "latest",
         "breakpoint-sass": "latest",
         "time-grunt": "latest"
-    },
-    "dependencies": {
-        "swiper": "^4.0.7"
     }
 }
