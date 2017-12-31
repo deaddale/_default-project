@@ -43,7 +43,7 @@ grunt
 http://localhost:7700/dist/
 ```
 ```
-// User command for setup and start (Mac OS)
+// In order to run these three commands automatically run in the console:
 ./setup-project.sh
 ```
 
