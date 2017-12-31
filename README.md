@@ -51,12 +51,11 @@ Configs task to build the project. at the moment, the project Assembly is config
 
 - **public/**
 
-All project source files, and a dist directory where the compiled files of the project.
+All project source files, and a "dist" directory where the compiled files of the project.
 
 - **public/block/**
 
-Blocks. Writing markup and styles are strictly for **[BEM methodology](https://ru.bem.info/methodology/quick-start/)**.
-One unit - one slide. **Common/** contain the General styles. Etc...
+Blocks. Writing markup and styles are strictly for **[BEM methodology](https://ru.bem.info/methodology/quick-start/)**. One unit - one slide. **Common/** contain the General styles. Etc...
 
 - **public/dist/**
 
@@ -68,9 +67,7 @@ The font files.
 
 - **public/img/**
 
-Strictly icons in SVG, then **[encode base64](https://www.base64-image.de)**.
-All the bitmap **[optimize using](https://tinypng.com)**.
-There is **[desktop apps](https://github.com/kyleduo/TinyPNG4Mac)**.
+Strictly icons in SVG, then **[encode base64](https://www.base64-image.de)**. All the bitmap **[optimize using](https://tinypng.com)**. There is **[desktop apps](https://github.com/kyleduo/TinyPNG4Mac)**.
 
 - **public/libs/**
 
@@ -91,20 +88,3 @@ A list with the imported SASS files
 - **public/Gruntfile.js**
 
 Grunt сonfig
-
-- **remove-temp-files.sh**
-
-macOS. Deleting all temporary project files
-
-- **setup-project.sh**
-
-macOS. Installing NPM, you create a link to the "dist" directory, run Grunt
-
-```
-// Deleting
-./remove-temp-files.sh
-```
-```
-// Setup&Start
-./setup-project.sh
-```
