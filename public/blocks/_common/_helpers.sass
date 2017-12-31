@@ -1,0 +1,135 @@
+// FORM ELEMENTS : begin
+// placeholder
+@mixin placeholder
+    &::-webkit-input-placeholder
+        @content
+    &::-moz-placeholder
+        @content
+    &:-moz-placeholder
+        @content
+    &:-ms-input-placeholder
+        @content
+    &:focus::-webkit-input-placeholder
+        color: transparent
+    &:focus::-moz-placeholder
+        color: transparent
+    &:focus:-moz-placeholder
+        color: transparent
+    &:focus:-ms-input-placeholder
+        color: transparent
+// text input default
+@mixin default-text-input
+    width: 100%
+    outline: none
+    border: none
+    border-bottom: 3px $color-black-2 solid
+    padding: 0 0 3.5px
+    margin: 0
+    border-radius: 0
+    display: block
+    font-weight: normal
+    font-size: 23px
+    line-height: normal
+    font-family: $font-intro-regular
+    color: $color-black-2
+    text-align: left
+    background: transparent
+    transition: all 0.3s ease
+    @include placeholder
+        color: $color-black-2
+        transition: all 0.3s ease
+    &:focus
+        outline: none
+        color: $color-black-5
+        border-color: $color-purple
+        transition: all 0.3s ease
+    &_error
+        color: $color-red
+        transition: all 0.3s ease
+// textarea default
+@mixin default-textarea
+    width: 100%
+    outline: none
+    border: none
+    border-bottom-width: 3px
+    border-bottom-style: solid
+    border-bottom-color: $color-black-2
+    display: block
+    font-weight: normal
+    font-size: 23px
+    line-height: normal
+    font-family: $font-intro-regular
+    text-align: left
+    text-transform: uppercase
+    padding: 10px 16px 9px 16px
+    margin: 0
+    border-radius: 0
+    resize: vertical
+    -webkit-appearance: none
+    background: transparent
+    transition: all 0.3s ease
+    @include placeholder
+        color: $color-black-2
+        transition: all 0.3s ease
+    &:focus
+        outline: none
+        color: $color-black-5
+        border-color: $color-purple
+        transition: all 0.3s ease
+    &_error
+        color: $color-red
+        transition: all 0.3s ease
+// button default
+@mixin default-btn
+    display: inline-block
+    font-family: $font-intro-bold
+    font-size: 25px
+    text-transform: uppercase
+    color: $color-black-2
+    width: 100%
+    height: auto
+    background: $color-white-3
+    border: 3px solid $color-black-2
+    line-height: 1
+    padding: 22px 0
+    cursor: pointer
+    user-select: none
+    outline: none
+    text-decoration: none
+    border-radius: 0
+    text-align: center
+    transition: all 0.2s ease
+    &:hover
+        background: $color-black-2
+        color: $color-white-3
+        transition: all 0.2s ease
+// FORM ELEMENTS : end
+
+// GRID : begin
+// main parent container (glass, container)
+@mixin glass
+    width: 100%
+    max-width: 1440px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 50px
+    padding-right: 50px
+    position: relative
+    display: flex
+// GRID : end
+
+// POSITION CHILD AT CENTER : begin
+@mixin pos-all-center-children
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate3d(-50%,-50%,0)
+@mixin pos-horizontal-center-children
+    position: relative
+    left: 50%
+    transform: translate3d(-50%,0,0)
+@mixin pos-vertical-center-children
+    position: relative
+    top: 50%
+    transform: translate3d(0,-50%,0)
+// POSITION CHILD AT CENTER : end
