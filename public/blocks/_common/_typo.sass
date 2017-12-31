@@ -3,10 +3,8 @@
 // @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic-ext')
 // PlayFairDisplay
 @include font-face(PlayFairDisplay, "../fonts/PlayFairDisplay_400", 400, normal, eot woff2 woff svg ttf)
-
 html
     -webkit-font-smoothing: antialiased
-
 body
     font-family: $font-arial
     font-size: 14px
@@ -14,13 +12,10 @@ body
     color: $color-black
     text-rendering: optimizeLegibility
     -webkit-text-rendering: optimizeLegibility
-
-// h1-h6 titles
+    @include selectionText
 h1, h2, h3, h4, h5, h6
     margin: 0
     padding: 0
-
-// text (link, bold, italic) : begin
 p
     margin: 0
     padding: 0
@@ -34,32 +29,22 @@ p
         &:hover
         &:active
         &:visited
-// text (link, bold, italic) : end
-
-// bulleted list : begin
 ul
     margin: 0
     padding: 0
     li
         margin: 0
         padding: 0
-// bulleted list : end
-
-// numbered list : begin
 ol
     margin: 0
     padding: 0
     li
         margin: 0
         padding: 0
-// numbered list : end
-
-// table : begin
 // table
 //     width: 100%
 //     margin: 0
 //     padding: 0
-//
 //     &:hover
 //         transition: all 0.2s ease
 //     tr
@@ -67,15 +52,9 @@ ol
 //         td
 //             padding: 10px 13px
 //             text-align: left
-//             border: 1px solid #010101
-//
+//             border: 1px solid $color-black
 //         th
 //             font-weight: bold
 //             font-size: 120%
-//
 //     &:last-child
 //         margin-bottom: 0
-// table : end
-
-// hor line
-// hr
