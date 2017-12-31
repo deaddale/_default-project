@@ -42,6 +42,10 @@ grunt
 // URL to view the home
 http://localhost:7700/dist/
 ```
+```
+// User command for setup and start (Mac OS)
+./setup-project.sh
+```
 
 ## Project structure ##
 
