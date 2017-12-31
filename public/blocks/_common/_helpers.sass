@@ -22,7 +22,7 @@
     width: 100%
     outline: none
     border: none
-    border-bottom: 3px $color-black-2 solid
+    border-bottom: 3px $color-black solid
     padding: 0 0 3.5px
     margin: 0
     border-radius: 0
@@ -30,22 +30,22 @@
     font-weight: normal
     font-size: 23px
     line-height: normal
-    font-family: $font-intro-regular
-    color: $color-black-2
+    font-family: "Arial", sans-serif
+    color: $color-black
     text-align: left
     background: transparent
     transition: all 0.3s ease
     @include placeholder
-        color: $color-black-2
+        color: $color-black
         transition: all 0.3s ease
     &:focus
         outline: none
-        color: $color-black-5
-        border-color: $color-purple
+        color: $color-black
+        border-color: rgba($color-black, 0.5)
         transition: all 0.3s ease
-    &_error
-        color: $color-red
-        transition: all 0.3s ease
+    //&_error
+    //    color: $color-red
+    //    transition: all 0.3s ease
 // textarea default
 @mixin default-textarea
     width: 100%
@@ -53,12 +53,12 @@
     border: none
     border-bottom-width: 3px
     border-bottom-style: solid
-    border-bottom-color: $color-black-2
+    border-bottom-color: $color-black
     display: block
     font-weight: normal
     font-size: 23px
     line-height: normal
-    font-family: $font-intro-regular
+    font-family: "Arial", sans-serif
     text-align: left
     text-transform: uppercase
     padding: 10px 16px 9px 16px
@@ -69,27 +69,28 @@
     background: transparent
     transition: all 0.3s ease
     @include placeholder
-        color: $color-black-2
+        color: $color-black
         transition: all 0.3s ease
     &:focus
         outline: none
-        color: $color-black-5
-        border-color: $color-purple
+        color: $color-black
+        border-color: rgba($color-black, 0.5)
         transition: all 0.3s ease
-    &_error
-        color: $color-red
-        transition: all 0.3s ease
+    //&_error
+    //    color: $color-red
+    //    transition: all 0.3s ease
 // button default
 @mixin default-btn
     display: inline-block
-    font-family: $font-intro-bold
+    font-family: "Arial", sans-serif
+    font-weight: bold
     font-size: 25px
     text-transform: uppercase
-    color: $color-black-2
+    color: $color-black
     width: 100%
     height: auto
-    background: $color-white-3
-    border: 3px solid $color-black-2
+    background: $color-white
+    border: 3px solid $color-black
     line-height: 1
     padding: 22px 0
     cursor: pointer
@@ -100,8 +101,8 @@
     text-align: center
     transition: all 0.2s ease
     &:hover
-        background: $color-black-2
-        color: $color-white-3
+        background: $color-black
+        color: $color-white
         transition: all 0.2s ease
 // FORM ELEMENTS : end
 
