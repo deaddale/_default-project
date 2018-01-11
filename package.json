@@ -1,6 +1,6 @@
 {
     "name": "app-project",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "devDependencies": {
         "grunt": "latest",
         "grunt-contrib-pug": "1.0.0",
