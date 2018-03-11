@@ -3,7 +3,7 @@ default:
   tasks:
   - pug
   - sass
-  - autoprefixer
+#  - autoprefixer
   - browserify
   - concat
   - copy

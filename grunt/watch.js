@@ -8,7 +8,8 @@ module.exports = {
             '<%= project.app %>/libs/sass/{,*/}*.{scss,sass}',
             '<%= project.app %>/<%= project.name %>*.{scss,sass}'
         ],
-        tasks: ['sass', 'autoprefixer'],
+        // tasks: ['sass', 'autoprefixer'],
+        tasks: ['sass'],
         options: {
             spawn: false
         }
