@@ -25,14 +25,8 @@ cd <project root>
 ```
 // Install npm
 npm install
-```
-```
-// Create a symbolic link to the directory "public/dist" (Windows)
-mklink /d dist public\dist
-```
-```
-// Create a symbolic link to the directory "public/dist" (Unix)
-ln -s public/dist dist
+or
+yarn
 ```
 ```
 // Run build
