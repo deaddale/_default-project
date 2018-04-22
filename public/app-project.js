@@ -1,13 +1,15 @@
 var app = new Vue({
     el: '#app',
     data: {
-		// isActiveHeader: false
     },
 	computed: {
 	},
 	methods: {
-		// showHeader: function() {
-		// 	this.isActiveHeader = !this.isActiveHeader;
-		// }
+		exampleMethod: function () {
+			console.log('exampleMethod init!');
+		}
+	},
+	mounted() {
+		this.exampleMethod;
 	}
 });

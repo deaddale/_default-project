@@ -1,5 +1,5 @@
 default:
-  description: 'Default (production) build'
+  description: 'Default build'
   tasks:
   - pug
   - sass
@@ -9,17 +9,3 @@ default:
   - copy
   - connect
   - watch
-
-#prod:
-#  description: 'production'
-#  tasks:
-#    - htmlrender
-#    - sass
-#    - autoprefixer
-#    - cssmin
-#    - browserify
-#    - concat
-#    - uglify
-#    - copy
-#    - connect
-#    - watch-prod

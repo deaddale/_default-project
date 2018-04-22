@@ -9,76 +9,45 @@ Perfect project/pattern for the classic layout. Not intended for SPA.
 - Vue.js
 - jQuery
 
+## NPM list ##
+- grunt
+- grunt-contrib-pug
+- grunt-autoprefixer
+- grunt-browserify
+- grunt-contrib-concat
+- grunt-contrib-connect
+- grunt-contrib-copy
+- grunt-contrib-watch
+- grunt-sass
+- grunt-contrib-cssmin
+- grunt-contrib-uglify
+- jit-grunt
+- load-grunt-config
+- breakpoint-sass
+- time-grunt: latest
+
 ## Setup ##
-
-To get started:
-- Clone the repository.
-- Then use the terminal/command prompt navigate to the root directory.
-- Install NPM;
-- Create a symbolic link to the directory "public/dist";
-- Run the project Assembly.
-
+```
+// Clone the repository
+git clone <url>
+```
 ```
 // Go to the directory with the project
 cd <project root>
 ```
 ```
-// Install npm
-npm install
-or
+// Install npm (basic)
+npm i
+```
+// Install npm (reccomended)
+```
 yarn
 ```
 ```
-// Run build
+// Run default build
 grunt
 ```
 ```
 // URL to view the home
-http://localhost:7700/dist/
+http://localhost:7700/public/dist/
 ```
-
-## Project structure ##
-
-- **grunt/**
-
-Configs task to build the project. at the moment, the project Assembly is configured only on the development.
-
-- **public/**
-
-All project source files, and a "dist" directory where the compiled files of the project.
-
-- **public/block/**
-
-Blocks. Writing markup and styles are strictly for **[BEM methodology](https://ru.bem.info/methodology/quick-start/)**. One unit - one slide. **Common/** contain the General styles. Etc...
-
-- **public/dist/**
-
-The compiled project files
-
-- **public/fonts/**
-
-The font files.
-
-- **public/img/**
-
-Strictly icons in SVG, then **[encode base64](https://www.base64-image.de)**. All the bitmap **[optimize using](https://tinypng.com)**. There is **[desktop apps](https://github.com/kyleduo/TinyPNG4Mac)**.
-
-- **public/libs/**
-
-Third-party libraries (JS and SASS).
-
-- **public/tpls/**
-
-Template markup
-
-- **public/app-project.js**
-
-The main JS file
-
-- **public/app-project.sass**
-
-A list with the imported SASS files
-
-- **public/Gruntfile.js**
-
-Grunt сonfig

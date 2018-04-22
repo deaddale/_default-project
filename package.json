@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "devDependencies": {
         "grunt": "latest",
-        "grunt-contrib-pug": "1.0.0",
+        "grunt-contrib-pug": "latest",
         "grunt-autoprefixer": "latest",
         "grunt-browserify": "latest",
         "grunt-contrib-concat": "latest",
