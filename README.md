@@ -18,6 +18,7 @@ Perfect project/pattern for the classic layout. Not intended for SPA.
 - grunt-contrib-connect
 - grunt-contrib-copy
 - grunt-contrib-watch
+- node-sass
 - grunt-sass
 - grunt-contrib-cssmin
 - grunt-contrib-uglify
@@ -39,8 +40,7 @@ cd <project root>
 // Install npm (basic)
 npm i
 ```
-// Install npm (reccomended)
-```
+// Install npm (recommended)
 yarn
 ```
 ```
